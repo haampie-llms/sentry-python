@@ -3,7 +3,7 @@ import sys
 import warnings
 from logging import LogRecord
 
-from sentry_sdk import get_client
+from sentry_sdk.api import get_client
 from sentry_sdk.client import _client_init_debug
 from sentry_sdk.utils import logger
 

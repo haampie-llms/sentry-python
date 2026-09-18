@@ -3,8 +3,9 @@ import warnings
 from contextlib import contextmanager
 from typing import TYPE_CHECKING
 
-from sentry_sdk import Client, tracing_utils
+from sentry_sdk import tracing_utils
 from sentry_sdk._init_implementation import init
+from sentry_sdk.client import Client
 from sentry_sdk.consts import INSTRUMENTER
 from sentry_sdk.crons import monitor
 from sentry_sdk.scope import Scope, _ScopeManager, isolation_scope, new_scope

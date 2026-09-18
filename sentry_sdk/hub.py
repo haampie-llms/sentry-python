@@ -2,13 +2,13 @@ import warnings
 from contextlib import contextmanager
 from typing import TYPE_CHECKING
 
-from sentry_sdk import (
+from sentry_sdk._compat import with_metaclass
+from sentry_sdk.api import (
     get_client,
     get_current_scope,
     get_global_scope,
     get_isolation_scope,
 )
-from sentry_sdk._compat import with_metaclass
 from sentry_sdk.client import Client
 from sentry_sdk.consts import INSTRUMENTER
 from sentry_sdk.scope import _ScopeManager
